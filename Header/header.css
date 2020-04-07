@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+nav {
+  background-color: rgba(0,0,0,.9);
+  padding: 1rem;
+  width: 100vw;
+}
+
+
+nav a {
+  text-decoration: none;
+  font-size: 1rem;
+  padding: .6rem 1rem;
+  text-align: center;
+  color: white;
+  display: block;
+}
+
+nav a:hover{
+  color: grey;
+}
+
+.sign-up{
+  border: 1px solid grey;
+  border-radius: 9999px;
+}
+.sign-up:hover {
+  background-color: white;
+}
+
+@media (min-width: 768px){
+  nav a{
+    float: right;
+  }
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .left-float {
+    float: left;
+  }
+      nav::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
